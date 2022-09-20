@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 2022 FrontEnd Developer</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="https://google.com">May<span>Borg</span></a>
+            
+            <img id="mobile-cta" class="mobile-menu" src="Images/menu-logo.svg" alt="Menu" height="20px">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="Images/icons8-close.svg" alt="Exit">
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li class="current"><a href="#">Contact</a></li>
+                    <li class="go-premium-cta"><a href="#">Go Premium</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="left-col">
+            <div class="subhead"><p class="tag-line">It's Nitty &amp; Gritty</p>
+                <h1>A Mask Rap That Never Drink</h1>
+                    <div>
+                        <a href="https://www.theodinproject.com/" class="primary-cta">Try for Free</a>
+                        <a href="https://www.youtube.com/watch?v=DRwYhxVNwzU" class="watch-video-cta">
+                            <img src="Images/video-svgrepo-com.svg" alt="Watch Video" >Watch A video
+                        </a>
+            
+                    </div> 
+            
+            </div>
+            
+            <img src="Images/list-svgrepo-com.svg" class="hero-img" alt="list">
+        
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Unlimited Time</li>
+                <li>Late Night Remainder</li>
+                <li>Rewards on Applausing</li>
+                <li>High Quality sound</li>
+                <li>Surround Sound</li>
+                <li>Other Awesome Features</li>
+            </ul>
+
+            <img src="Images/Party.jpg" alt="Party background">
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="Images/testimonial.jpg" alt="Testimonial" >
+                    <blockquote>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis adipisci delectus commodi temporibus? Eveniet natus deleniti sunt quibusdam at ."</blockquote>
+                    <cite>-TVD Fan</cite>
+                </li>
+                <li>
+                    <img src="Images/testimonial.jpg" alt="Testimonial">
+                    <blockquote>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis adipisci delectus commodi temporibus? velit ad earum non incidunt pariatur harum quaerat repellat, veniam dignissimos."</blockquote>
+                    <cite>-TVD fan</cite>
+                </li>
+                <li>
+                    <img src="Images/testimonial.jpg" alt="Testimonial">
+                    <blockquote>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis adipisci delectus commodi e. Ex repellat, veniam dignissimos."</blockquote>
+                    <cite>-TVD Fan</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="contact-section"> 
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name">
+                
+                    <label for="Message">Message</label>
+                    <textarea name="Message" id="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Send Message">
+                </form>
+                
+            </div>
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120775.00796621031!2d72.76314015820313!3d18.921698199999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7d1c06fffffff%3A0xc0290485a4d73f57!2sThe%20Taj%20Mahal%20Palace%2C%20Mumbai!5e0!3m2!1sen!2sin!4v1654274269763!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const mobileBtn = document.getElementById   ('mobile-cta')
+            nav = document.querySelector('nav')
+            mobileBtnExit = document.getElementById('mobile-exit');
+    
+        mobileBtn.addEventListener('click', () => {
+                nav.classList.add('menu-btn');
+            })
+        
+        mobileBtnExit.addEventListener('click', () => {
+                nav.classList.remove('menu-btn');
+            })    
+    </script>
+</body>
+</html>
